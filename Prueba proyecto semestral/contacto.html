@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- el navbar con la pagina abierta en pnatalla completa-->
+
+    <nav>
+        <div class="nav-wrapper #000000 black">
+          <a href="index.html" class="brand-logo center"
+            ><img src="img/logo4" alt="logo" width="60" height="60"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  
+          <ul class="left hide-on-med-and-down" id="menu-side">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="nostros.html">Sobre Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down" id="menu-side">
+            <li><a class="right hide-on-med-and-down waves-effect waves-light modal-trigger" href="#modal2">Login</a></li>
+            <li><a class="right hide-on-med-and-down waves-effect waves-light modal-trigger" href="#modal1">Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="nostros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <li><a class="waves-effect waves-light modal-trigger" href="#modal2">Login</a></li>
+        <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Sign up</a></li>
+      </ul>
+      
+      <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <form action="" method="get" class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="Nombre">Nombre: </label>
+                <input type="text"  required class="validate" id="txtNombre" name="txtNombre">
+              </div>
+              <div class="input-field col s6">
+                <label for="Apellido">Apellido: </label>
+                <input type="text"  required class="validate" id="txtApellido" name="txtApellido">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <label for="Usuario">Nombre Usuario: </label>
+                  <input type="text" required id="txtUsuario" name="txtUsuario" class="validate">
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <label for="password">Contraseña:</label>
+                <input type="password" required id="txtPass" name="txtPass" class="validate">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <label for="email">Email</label>
+                <input type="email" required id="txtEmail" name="txtEmail" class="validate">
+              </div>
+            </div>
+            <input class="right btn btn-success" type="submit" id="btnLogin" name="btnLogin" value="Registrarse">
+          </form>
+        </div>
+      </div>
+    </div>
+  
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <form action="" method="get" class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <label for="usuario">Nombre Usuario:</label>
+                <input type="text" required class="validate" id="txtUser" name="txtUser">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <label for="usuario">Contraseña:</label>
+                <input type="password" required class="validate" id="txtPass" name="txtPass">
+              </div>
+            </div>
+            <input class="right btn btn-success" type="submit" id="btnLogin" name="btnLogin" value="Ingresar">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer #2e7d32 green darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col s4">
+              <h5>Mi cuenta</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Mi cuenta</a>
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Lista de deseados</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!"
+                    >Carro de compras</a
+                  >
+                </li>
+                <br />
+                <li><a class="grey-text text-lighten-3" href="#!">Pedidos</a></li>
+              </ul>
+            </div>
+            <div class="col s4">
+              <h5 class="white-text">Enlaces</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="index.html">Inicio</a>
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href="tienda.html"
+                    >Tienda</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Instagram</a>
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Facebook</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col s4">
+              <h5 class="white-text">Información</h5>
+              <ul>
+                <li>
+                  <a class="grey-text text-lighten-3" href="nostros.html"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href="#!">Contacto</a>
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href=""
+                    >Preguntas frecuentes</a
+                  >
+                </li>
+                <br />
+                <li>
+                  <a class="grey-text text-lighten-3" href=""
+                    >Término y Condiciones</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright #000000 black">
+          <div class="container center">© 2023 Copyright</div>
+        </div>
+      </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
