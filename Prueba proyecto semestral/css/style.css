@@ -1,9 +1,11 @@
 .card-title{
     color: black;
 }
+/* esta es la fuente que se utiliza en los titulos: */
 .titulo1{
     font-family: 'Besttia Brush', sans-serif;
 }
+/* esto es para que cuando los links con la fuente quedan en azul, hacer que se vuelva de color negro*/
 .texto{
     color: black;
 }
