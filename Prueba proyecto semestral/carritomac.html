@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tienda</title>
+    <title>Carro</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/besttia-brush"
       rel="stylesheet"
     />
     <link
@@ -20,8 +24,6 @@
     />
   </head>
   <body>
-    <!-- el navbar con la pagina abierta en pnatalla completa-->
-
     <nav>
       <div class="nav-wrapper #000000 black">
         <a href="index.html" class="brand-logo center"
@@ -166,7 +168,7 @@
       <div class="modal-content">
         <h4 class="texto1">Iniciar sesión</h4>
         <div class="row">
-          <form action="tienda1.html" method="get" class="col s12">
+          <form action="carrito1.html" method="get" class="col s12">
             <div class="row">
               <div class="input-field col s12">
                 <label for="usuario" class="texto1">Nombre Usuario:</label>
@@ -203,310 +205,76 @@
       </div>
     </div>
 
-    <h2 class="center titulo1">Tienda</h2>
-
-    <!--carrusel-->
-    <!-- inicio carrusel: esto es la seccion donde las fotos se mueven solas en el inicio -->
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h2 class="titulo1">Carrito</h2>
+        </div>
+        <div class="col s12 center">
+          <h4 class="texto1">Mis Productos</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col s12 m7">
+        <div class="card horizontal small">
+          <div class="card-image f1">
+            <img src="img/macetero.jfif"/>
+          </div>
+          <div class="card-stacked">
+            <div class="card-content  texto1">
+              <p>MACETA CEMENTO CUADRADA L. | Medidas: 32x32 cm.</p>
+              <br><br><br><br><br>
+              <a href="carrito.html" class="icon1"><i class="material-icons">delete</i></a>
+            </div>
+            <div class="card-action">
+              <p class="center">$34.990</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container section">
       <div class="row">
-        <div class="col s12">
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="img/jardineria1.jpg" alt="" />
-                <div class="caption left-align">
-                  <h3 class="titulo1">Lorem, ipsum dolor.</h3>
-                  <h5 class="texto1">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, quos.
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <img src="img/jardineria2.jpg" alt="" />
-                <div class="caption right-align">
-                  <h3 class="titulo1">Lorem, ipsum dolor.</h3>
-                  <h5 class="texto1">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, quos.
-                  </h5>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div class="col s4 texto1">
+          <h5>Total a pagar:</h5>
+        </div>
+        <div class="col s8 right-align">
+          <h5>$34.990</h5>
         </div>
       </div>
     </div>
-    <!-- fin carrusel:-->
 
-    <!-- Tarjetas de Productos -->
-
-    <ul class="pagination center">
-      <li class="disabled">
-        <a href="#!"><i class="material-icons">chevron_left</i></a>
-      </li>
-      <li class="active #000000 black"><a href="tienda.html">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect">
-        <a href="#!"><i class="material-icons">chevron_right</i></a>
-      </li>
-    </ul>
-    <!-- inicio maceteros: -->
     <div class="container">
       <div class="row">
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <a href="producto.html">
-              <img src="img/macetero.jfif" height="250px" />
-              <a
-                class="btn-floating halfway-fab waves-effect waves-light green"
-                href="carritomac.html"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
+        <div class="col s12 center-align texto1">
+          <a class="waves-effect waves-light modal-trigger" href="#modal2" >
+            <button
+              class="btn waves-effect waves-light #424242 grey darken-3 texto1 #modal2"
+              type="submit"
+              name="action"
+            >
+              Comprar
+            </button>
           </a>
-            <div class="card-content texto1">
-              <p>MACETA CEMENTO CUADRADA | Medidas: 32x32 cm.</p>
-              <hr />
-              <p class="center">$34.990</p>
-              <hr />
-              <p class="center">STOCK: 3</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/macetero2.jpg" height="273px" />
-
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>MACETA COLGANTE PETS GATO</p>
-              <hr />
-              <p class="center">$7.990</p>
-              <hr />
-              <p class="center">STOCK: 1</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/macetero3.webp" height="250px" />
-
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Macetero 20 cm Simone gris Outzen</p>
-              <hr />
-              <p class="center">$9.990</p>
-              <hr />
-              <p class="center">STOCK: 5</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/macetero4.webp" height="250px" />
-
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Macetero yeso octagonal irregular</p>
-              <hr />
-              <p class="center">$2.000</p>
-              <hr />
-              <p class="center">STOCK: 10</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <!-- fin maceteros -->
+    <br /><br /><br /><br />
 
-    <br />
-
-    <!-- inicio tierra: -->
-    <div class="container">
-      <div class="row">
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/tierra.webp" height="270px" />
-
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Tierra de hojas 15 L</p>
-              <hr />
-              <p class="center">$5.190</p>
-              <hr />
-              <p class="center">STOCK: 0</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/tierra2.webp" height="245px" />
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>PACK TIERRA DE HOJAS | 5 Unidades | 50 Litros</p>
-              <hr />
-              <p class="center">$27.990</p>
-              <hr />
-              <p class="center">STOCK: 1</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/tierra3.webp" height="270px" />
-
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Tierra compost 50 litros Roots</p>
-              <hr />
-              <p class="center">$4.790</p>
-              <hr />
-              <p class="center">STOCK: 4</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/tierra4.jfif" height="250px" />
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Tierra Biológica Compost 80 litros</p>
-              <hr />
-              <p class="center">$ 10.990</p>
-              <hr />
-              <p class="center">STOCK: 2</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col s12 center-align texto1">
+      <a href="index.html">
+        <button
+          class="btn waves-effect waves-light #424242 grey darken-3 texto1"
+          type="submit"
+          name="action"
+        >
+          Volver al inicio
+        </button>
+      </a>
     </div>
-    <!-- fin tierra -->
-
-    <br />
-
-    <!-- inicio flores: -->
-    <div class="container">
-      <div class="row">
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/flores.webp" height="230px" />
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Ramo Extendido con 25 Rosas Rojas y Blancas</p>
-              <hr />
-              <p class="center">$49.900</p>
-              <hr />
-              <p class="center">STOCK: 0</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/flores2.png" height="250px" />
-
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Ramo con 40 Rosas</p>
-              <hr />
-              <p class="center">$99.990</p>
-              <hr />
-              <p class="center">STOCK: 7</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/flores3.webp" height="250px" />
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>Ramo de 2 girasoles</p>
-              <hr />
-              <p class="center">$26.000</p>
-              <hr />
-              <p class="center">STOCK: 14</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/flores4.jpg" height="250px" />
-
-              <a class="btn-floating halfway-fab waves-effect waves-light green"
-                ><i class="material-icons">add_shopping_cart</i></a
-              >
-            </div>
-            <div class="card-content texto1">
-              <p>RAMO DE 3 ROSAS</p>
-              <hr />
-              <p class="center">$23.900</p>
-              <hr />
-              <p class="center">STOCK: 2</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- fin flores -->
-    <!-- Fin Tarjetas de Productos -->
-    <ul class="pagination center">
-      <li class="disabled">
-        <a href="#!"><i class="material-icons">chevron_left</i></a>
-      </li>
-      <li class="active active #000000 black"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect">
-        <a href="#!"><i class="material-icons">chevron_right</i></a>
-      </li>
-    </ul>
+    <br /><br />
 
     <!-- Footer -->
     <footer class="page-footer #2e7d32 green darken-3 texto1">
@@ -597,13 +365,14 @@
       document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".sidenav");
         var instances = M.Sidenav.init(elems);
-        var elems = document.querySelectorAll(".modal");
-        var instances = M.Modal.init(elems);
+
         var elems = document.querySelectorAll(".slider");
         var instances = M.Slider.init(elems, {
           height: 500,
           interval: 10000,
         });
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems);
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

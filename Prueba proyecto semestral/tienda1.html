@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--
-   para crear otra pagina hay que copiar y pegar todo lo que esta en el "<head>" ya que asi se pasan 
-   todos los estilos que se han estado trabajando en el desarrollo de la pagina
-  -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
-
+    <title>Tienda</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.cdnfonts.com/css/besttia-brush"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link
@@ -29,12 +20,23 @@
     />
   </head>
   <body>
+    <!-- el navbar con la pagina abierta en pnatalla completa-->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="perfilDatos.html">Ver perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="tienda.html">Cerrar sesión</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="perfilDatos.html">Ver perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="tienda.html">Cerrar sesión</a></li>
+    </ul>
     <!--si van a hacer cambios de agregar paginas o cosas por el estilo intenten cambiarlo primero en el index y luego aplicarlo a los demas-->
     <!--inicio del navbar (todo lo que es la barra superior para pasar de pagina en pagina), 
       al crear una pagina nueva todo esto se debe copiar  y pegar tmb-->
     <nav>
       <div class="nav-wrapper #000000 black">
-        <a href="index.html" class="brand-logo center"
+        <a href="index1.html" class="brand-logo center"
           ><img src="img/logo6.png" alt="logo" width="110" height="60"
         /></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
@@ -42,29 +44,18 @@
         >
         <!--estas son las paginas que aparecen arriba a la izquierda-->
         <ul class="left hide-on-med-and-down" id="menu-side">
-          <li class="texto1"><a href="index.html">Inicio</a></li>
-          <li class="texto1"><a href="tienda.html">Tienda</a></li>
-          <li class="texto1"><a href="nostros.html">Sobre Nosotros</a></li>
-          <li class="texto1"><a href="contacto.html">Contacto</a></li>
+          <li class="texto1"><a href="index1.html">Inicio</a></li>
+          <li class="texto1"><a href="tienda1.html">Tienda</a></li>
+          <li class="texto1"><a href="nostros1.html">Sobre Nosotros</a></li>
+          <li class="texto1"><a href="contacto1.html">Contacto</a></li>
         </ul>
         <!--estas son las paginas que aparecen cuando la pagina se hace mas pequeña-->
         <ul class="right hide-on-med-and-down" id="menu-side">
           <li>
-            <a
-              class="right hide-on-med-and-down waves-effect waves-light modal-trigger texto1"
-              href="#modal2"
-              >Login</a
-            >
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Perfil<i class="material-icons right">arrow_drop_down</i></a></li>
           </li>
           <li>
-            <a
-              class="right hide-on-med-and-down waves-effect waves-light modal-trigger texto1"
-              href="#modal1"
-              >Sign up</a
-            >
-          </li>
-          <li>
-            <a href="carrito.html"><i class="material-icons">shopping_cart</i></a>
+            <a href="carrito1.html"><i class="material-icons">shopping_cart</i></a>
           </li>
         </ul>
       </div>
@@ -74,29 +65,20 @@
     esto tmb se debe copiar y pegar al crear nueva pagina-->
     <!--inicio navbar mobile-->
     <ul class="sidenav" id="mobile-demo">
-      <li class="texto1"><a href="index.html">Inicio</a></li>
-      <li class="texto1"><a href="tienda.html">Tienda</a></li>
-      <li class="texto1"><a href="nostros.html">Sobre Nosotros</a></li>
-      <li class="texto1"><a href="contacto.html">Contacto</a></li>
-      <li class="texto1"><a href="carrito.html">Carro </a></li>
+      <li class="texto1"><a href="index1.html">Inicio</a></li>
+      <li class="texto1"><a href="tienda1.html">Tienda</a></li>
+      <li class="texto1"><a href="nostros1.html">Sobre Nosotros</a></li>
+      <li class="texto1"><a href="contacto1.html">Contacto</a></li>
+      <li class="texto1"><a href="carrito1.html">Carro </a></li>
       <hr />
       </li>
-      <li class="texto1">
-        <a class="waves-effect waves-light modal-trigger" href="#modal2"
-          >Login</a
-        >
-      </li>
-      <li class="texto1">
-        <a class="waves-effect waves-light modal-trigger" href="#modal1"
-          >Sign up</a
-        >
+      <li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Perfil<i class="material-icons right">arrow_drop_down</i></a></li>
       </li>
     </ul>
     <!--fin navbar mobile-->
 
     <!-- Modal Structure -->
-    <!--los modal son formularios para iniciar sesion y/o registrarse-->
-    <!--inicio modal 1: es el formulario para registrarse (lo ideal tmb seria copiarlo y pegarlo para que puedan acceder desde cualquier pagina)-->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4 class="texto1">Registrarse</h4>
@@ -214,8 +196,10 @@
         </div>
       </div>
     </div>
-    <!--fin modal 2:-->
-    <!--carrusel-->
+
+    <h2 class="center titulo1">Tienda</h2>
+    
+ <!--carrusel-->
     <!-- inicio carrusel: esto es la seccion donde las fotos se mueven solas en el inicio -->
     <div class="container section">
       <div class="row">
@@ -225,7 +209,7 @@
               <li>
                 <img src="img/jardineria1.jpg" alt="" />
                 <div class="caption left-align">
-                  <h3 class="titulo1">Flower pots</h3>
+                  <h3 class="titulo1">Lorem, ipsum dolor.</h3>
                   <h5 class="texto1">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Cupiditate, quos.
@@ -249,134 +233,265 @@
     </div>
     <!-- fin carrusel:-->
 
-    <!--las cartas es la seccion donde aparece el titulo novedades, en donde se supone que pondriamos las ofertas importantes-->
-    <!--inicio cartas:-->
-    <div class="container">
-      <div class="row">
-        <div class="col s12 center-align titulo1">
-          <h2>Novedades</h2>
+<!-- Tarjetas de Productos -->
+
+<ul class="pagination center">
+  <li class="disabled">
+    <a href="#!"><i class="material-icons">chevron_left</i></a>
+  </li>
+  <li class="active"><a href="tienda1.html">1</a></li>
+  <li class="waves-effect"><a href="#!">2</a></li>
+  <li class="waves-effect"><a href="#!">3</a></li>
+  <li class="waves-effect"><a href="#!">4</a></li>
+  <li class="waves-effect"><a href="#!">5</a></li>
+  <li class="waves-effect">
+    <a href="#!"><i class="material-icons">chevron_right</i></a>
+  </li>
+</ul>
+<!-- inicio maceteros: -->
+<div class="container">
+  <div class="row">
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <a href="producto1.html">
+          <img src="img/macetero.jfif" height="250px" />
+          <a
+            class="btn-floating halfway-fab waves-effect waves-light green"
+            href="carrito1mac.html"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
         </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/maceta1" height="350px"/>
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content texto1">
-              <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
-              </p>
-            </div>
-            <div class="card-action center texto1 #eceff1 blue-grey lighten-5">
-              <a href="tienda.html" class="#4e342e brown-text text-darken-3"
-                >Comprar</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/maceta2" height="350px"/>
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content texto1">
-              <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
-              </p>
-            </div>
-            <div class="card-action center texto1 #eceff1 blue-grey lighten-5">
-              <a href="tienda.html" class="#4e342e brown-text text-darken-3"
-                >Comprar</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/maceta3" height="350px"/>
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content texto1">
-              <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
-              </p>
-            </div>
-            <div class="card-action center texto1 #eceff1 blue-grey lighten-5">
-              <a href="tienda.html" class="#4e342e brown-text text-darken-3"
-                >Comprar</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/maceta4" height="350px"/>
-              <span class="card-title"></span>
-            </div>
-            <div class="card-content texto1">
-              <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
-              </p>
-            </div>
-            <div class="card-action center texto1 #eceff1 blue-grey lighten-5">
-              <a href="tienda.html" class="#4e342e brown-text text-darken-3"
-                >Comprar</a
-              >
-            </div>
-          </div>
+      </a>
+        <div class="card-content texto1">
+          <p>MACETA CEMENTO CUADRADA | Medidas: 32x32 cm.</p>
+          <hr />
+          <p class="center">$34.990</p>
+          <hr />
+          <p class="center">STOCK: 3</p>
         </div>
       </div>
     </div>
-    <!--fin cartas:-->
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/macetero2.jpg" height="273px" />
 
-    <!--inicio redes sociales:-->
-    <!--esta es la seccion donde estan todas las fotos de las redes sociales (son funcionales al clickearla)-->
-    <div class="container center">
-      <div class="row">
-        <div class="col s12 center-align titulo1">
-          <h3>Siguenos y Contáctanos</h3>
-          <br /><br />
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
         </div>
-        <div class="col s3">
-          <a href="https://www.instagram.com/"
-            ><img src="img/instagram3.png" height="70" width="70" alt=""
-          /></a>
-        </div>
-        <div class="col s3">
-          <a href="https://www.whatsapp.com/?lang=es"
-            ><img src="img/whatsapp3.png" height="70" width="70" alt=""
-          /></a>
-          <br /><br />
-        </div>
-        <div class="col s3">
-          <a href="https://es-la.facebook.com/"
-            ><img src="img/facebook3.png" height="70" width="70" alt=""
-          /></a>
-        </div>
-        <div class="col s3">
-          <a href=""
-            ><img src="img/gmail3.png" alt="" height="70" width="70"
-          /></a>
+        <div class="card-content texto1">
+          <p>MACETA COLGANTE PETS GATO</p>
+          <hr />
+          <p class="center">$7.990</p>
+          <hr />
+          <p class="center">STOCK: 1</p>
         </div>
       </div>
     </div>
-    <!--fin redes sociales-->
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/macetero3.webp" height="250px" />
 
-    <!--inicio Footer: -->
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Macetero 20 cm Simone gris Outzen</p>
+          <hr />
+          <p class="center">$9.990</p>
+          <hr />
+          <p class="center">STOCK: 5</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/macetero4.webp" height="250px" />
 
-    <!--el footer es el pie de pagina donde esta el cuadrado abajo del todo, esta seccion si se debe copiar y pegar en todas 
-        las paginas nuevas creadas ya que tiene que seguir la estructura en todas-->
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Macetero yeso octagonal irregular</p>
+          <hr />
+          <p class="center">$2.000</p>
+          <hr />
+          <p class="center">STOCK: 10</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin maceteros -->
+
+<br />
+
+<!-- inicio tierra: -->
+<div class="container">
+  <div class="row">
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/tierra.webp" height="270px" />
+
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Tierra de hojas 15 L</p>
+          <hr />
+          <p class="center">$5.190</p>
+          <hr />
+          <p class="center">STOCK: 0</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/tierra2.webp" height="245px" />
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>PACK TIERRA DE HOJAS | 5 Unidades | 50 Litros</p>
+          <hr />
+          <p class="center">$27.990</p>
+          <hr />
+          <p class="center">STOCK: 1</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/tierra3.webp" height="270px" />
+
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Tierra compost 50 litros Roots</p>
+          <hr />
+          <p class="center">$4.790</p>
+          <hr />
+          <p class="center">STOCK: 4</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/tierra4.jfif" height="250px" />
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Tierra Biológica Compost 80 litros</p>
+          <hr />
+          <p class="center">$ 10.990</p>
+          <hr />
+          <p class="center">STOCK: 2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin tierra -->
+
+<br />
+
+<!-- inicio flores: -->
+<div class="container">
+  <div class="row">
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/flores.webp" height="230px" />
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Ramo Extendido con 25 Rosas Rojas y Blancas</p>
+          <hr />
+          <p class="center">$49.900</p>
+          <hr />
+          <p class="center">STOCK: 0</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/flores2.png" height="250px" />
+
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Ramo con 40 Rosas</p>
+          <hr />
+          <p class="center">$99.990</p>
+          <hr />
+          <p class="center">STOCK: 7</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/flores3.webp" height="250px" />
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>Ramo de 2 girasoles</p>
+          <hr />
+          <p class="center">$26.000</p>
+          <hr />
+          <p class="center">STOCK: 14</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/flores4.jpg" height="250px" />
+
+          <a class="btn-floating halfway-fab waves-effect waves-light green"
+            ><i class="material-icons">add_shopping_cart</i></a
+          >
+        </div>
+        <div class="card-content texto1">
+          <p>RAMO DE 3 ROSAS</p>
+          <hr />
+          <p class="center">$23.900</p>
+          <hr />
+          <p class="center">STOCK: 2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin flores -->
+<!-- Fin Tarjetas de Productos -->
+
+    
+
+    <!-- Footer -->
     <footer class="page-footer #2e7d32 green darken-3 texto1">
       <div class="container">
         <div class="row">
@@ -384,25 +499,25 @@
             <h5>Mi cuenta</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2"
+                <a class="grey-text text-lighten-3 texto1" href="perfilDatos.html"
                   >Mi cuenta</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2"
+                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="Deseados.html"
                   >Lista de deseados</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1" href="carrito.html"
+                <a class="grey-text text-lighten-3 texto1" href="carrito1.html"
                   >Carro de compras</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2">Pedidos</a>
+                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="Compras.html">Pedidos</a>
               </li>
             </ul>
           </div>
@@ -461,11 +576,6 @@
         <div class="container center">© 2023 Copyright</div>
       </div>
     </footer>
-    <!--finFooter: -->
-
-    <!--scripts: -->
-    <!--estos scripts son para que que se puedan activar ciertas funciones como los formularios o el navbar mobile
-    (copiar y pegar todo al agregar una pagina)-->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".sidenav");
@@ -478,6 +588,9 @@
         });
         var elems = document.querySelectorAll(".modal");
         var instances = M.Modal.init(elems);
+
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -487,6 +600,5 @@
     <style>
       @import url("https://fonts.cdnfonts.com/css/barlow-semi-condensed-2");
     </style>
-    <!-- fin scripts: -->
   </body>
 </html>

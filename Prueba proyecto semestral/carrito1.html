@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
+    <title>Carro</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -13,19 +13,33 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link href="https://fonts.cdnfonts.com/css/besttia-brush" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/besttia-brush"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.cdnfonts.com/css/barlow-semi-condensed-2"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- el navbar con la pagina abierta en pnatalla completa-->
-
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="perfilDatos.html">Ver perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="carrito.html">Cerrar sesión</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="perfilDatos.html">Ver perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="carrito.html">Cerrar sesión</a></li>
+    </ul>
+    <!--si van a hacer cambios de agregar paginas o cosas por el estilo intenten cambiarlo primero en el index y luego aplicarlo a los demas-->
+    <!--inicio del navbar (todo lo que es la barra superior para pasar de pagina en pagina), 
+      al crear una pagina nueva todo esto se debe copiar  y pegar tmb-->
     <nav>
       <div class="nav-wrapper #000000 black">
-        <a href="index.html" class="brand-logo center"
+        <a href="index1.html" class="brand-logo center"
           ><img src="img/logo6.png" alt="logo" width="110" height="60"
         /></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
@@ -33,29 +47,18 @@
         >
         <!--estas son las paginas que aparecen arriba a la izquierda-->
         <ul class="left hide-on-med-and-down" id="menu-side">
-          <li class="texto1"><a href="index.html">Inicio</a></li>
-          <li class="texto1"><a href="tienda.html">Tienda</a></li>
-          <li class="texto1"><a href="nostros.html">Sobre Nosotros</a></li>
-          <li class="texto1"><a href="contacto.html">Contacto</a></li>
+          <li class="texto1"><a href="index1.html">Inicio</a></li>
+          <li class="texto1"><a href="tienda1.html">Tienda</a></li>
+          <li class="texto1"><a href="nostros1.html">Sobre Nosotros</a></li>
+          <li class="texto1"><a href="contacto1.html">Contacto</a></li>
         </ul>
         <!--estas son las paginas que aparecen cuando la pagina se hace mas pequeña-->
         <ul class="right hide-on-med-and-down" id="menu-side">
           <li>
-            <a
-              class="right hide-on-med-and-down waves-effect waves-light modal-trigger texto1"
-              href="#modal2"
-              >Login</a
-            >
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Perfil<i class="material-icons right">arrow_drop_down</i></a></li>
           </li>
           <li>
-            <a
-              class="right hide-on-med-and-down waves-effect waves-light modal-trigger texto1"
-              href="#modal1"
-              >Sign up</a
-            >
-          </li>
-          <li>
-            <a href="carrito.html"><i class="material-icons">shopping_cart</i></a>
+            <a href="carrito1.html"><i class="material-icons">shopping_cart</i></a>
           </li>
         </ul>
       </div>
@@ -65,64 +68,19 @@
     esto tmb se debe copiar y pegar al crear nueva pagina-->
     <!--inicio navbar mobile-->
     <ul class="sidenav" id="mobile-demo">
-      <li class="texto1"><a href="index.html">Inicio</a></li>
-      <li class="texto1"><a href="tienda.html">Tienda</a></li>
-      <li class="texto1"><a href="nostros.html">Sobre Nosotros</a></li>
-      <li class="texto1"><a href="contacto.html">Contacto</a></li>
-      <li class="texto1"><a href="carrito.html">Carro </a></li>
+      <li class="texto1"><a href="index1.html">Inicio</a></li>
+      <li class="texto1"><a href="tienda1.html">Tienda</a></li>
+      <li class="texto1"><a href="nostros1.html">Sobre Nosotros</a></li>
+      <li class="texto1"><a href="contacto1.html">Contacto</a></li>
+      <li class="texto1"><a href="carrito1.html">Carro </a></li>
       <hr />
       </li>
-      <li class="texto1">
-        <a class="waves-effect waves-light modal-trigger" href="#modal2"
-          >Login</a
-        >
-      </li>
-      <li class="texto1">
-        <a class="waves-effect waves-light modal-trigger" href="#modal1"
-          >Sign up</a
-        >
+      <li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Perfil<i class="material-icons right">arrow_drop_down</i></a></li>
       </li>
     </ul>
     <!--fin navbar mobile-->
       
-      <div class="container section">
-        <div class="row">
-          <div class="col s12 center-align titulo1">
-            <h3>Contactanos</h3>
-          </div>
-          <div class="col s12 ">
-            <img src="img/sobrenosotros_2.jfif" width="100%" height="100%" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="container center">
-        <div class="row">
-          <div class="col s12 center-align titulo1">
-            <h3>Siguenos en nuestras redes sociales</h3>
-            <br>
-          </div>
-          <div class="col s6">
-            <a href="https://www.instagram.com/"><img src="img/instagram3.png" height="150" width="150" alt=""><h4 class="titulo1 texto">Instagram</h4></a>
-          </div>
-          <div class="col s6">
-            <a href="https://www.whatsapp.com/?lang=es"><img src="img/whatsapp3.png" height="150" width="150" alt=""><h4 class="titulo1 texto">Whatsapp</h4></a>
-            <br><br>
-          </div>
-          <div class="col s6">
-            <a href="https://es-la.facebook.com/"><img src="img/facebook3.png" height="150" width="150" alt=""><h4 class="titulo1 texto" texto>Facebook</h4></a>
-          </div>
-          <div class="col s6">
-            <a href=""><img src="img/gmail3.png" alt="" height="150" width="150"><h4 class="titulo1 texto">Correo</h4></a>
-            <br><br><br>
-          </div>
-          <div class="col s12 center-align titulo1">
-            <h2>Habla con nosotros!</h2>
-          </div>
-        </div>
-      </div>
-
-
       <!-- Modal Structure -->
       <div id="modal1" class="modal">
         <div class="modal-content">
@@ -205,7 +163,7 @@
         <div class="modal-content">
           <h4 class="texto1">Iniciar sesión</h4>
           <div class="row">
-            <form action="contacto1.html" method="get" class="col s12">
+            <form action="index1.html" method="get" class="col s12">
               <div class="row">
                 <div class="input-field col s12">
                   <label for="usuario" class="texto1">Nombre Usuario:</label>
@@ -242,6 +200,47 @@
         </div>
       </div>
 
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h2 class="titulo1">Carrito</h2>
+          </div>
+          <div class="col s12 center">
+              <h4 class=" texto1">Mis Productos</h3>
+          </div>
+        </div>
+      </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <h2 class="header"></h2>
+      <div class="card horizontal">
+        <div class="card-stacked">
+          <div class="card-content">
+            <p class="texto1 center">Tu carrito está vacío.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col s12 center-align texto1">
+      <a href="index.html">
+    <button
+      class="btn waves-effect waves-light #424242 grey darken-3 texto1"
+      type="submit"
+      name="action">Volver al inicio</button>
+    </a>
+    </div>
+  </div>
+</div>
+    
+
+
     <!-- Footer -->
     <footer class="page-footer #2e7d32 green darken-3 texto1">
       <div class="container">
@@ -250,25 +249,25 @@
             <h5>Mi cuenta</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2"
+                <a class="grey-text text-lighten-3 texto1" href="perfilDatos.html"
                   >Mi cuenta</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2"
+                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="Deseados.html"
                   >Lista de deseados</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1" href="carrito.html"
+                <a class="grey-text text-lighten-3 texto1" href="carrito1.html"
                   >Carro de compras</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2">Pedidos</a>
+                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="Compras.html">Pedidos</a>
               </li>
             </ul>
           </div>
@@ -332,8 +331,16 @@
         var elems = document.querySelectorAll(".sidenav");
         var instances = M.Sidenav.init(elems);
 
-        var elems = document.querySelectorAll('.modal');
+        var elems = document.querySelectorAll(".slider");
+        var instances = M.Slider.init(elems, {
+          height: 500,
+          interval: 10000,
+        });
+        var elems = document.querySelectorAll(".modal");
         var instances = M.Modal.init(elems);
+
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

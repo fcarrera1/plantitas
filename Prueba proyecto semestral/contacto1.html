@@ -21,11 +21,22 @@
     />
   </head>
   <body>
-    <!-- el navbar con la pagina abierta en pnatalla completa-->
-
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="perfilDatos.html">Ver perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="contacto.html">Cerrar sesión</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="perfilDatos.html">Ver perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="contacto.html">Cerrar sesión</a></li>
+    </ul>
+    <!--si van a hacer cambios de agregar paginas o cosas por el estilo intenten cambiarlo primero en el index y luego aplicarlo a los demas-->
+    <!--inicio del navbar (todo lo que es la barra superior para pasar de pagina en pagina), 
+      al crear una pagina nueva todo esto se debe copiar  y pegar tmb-->
     <nav>
       <div class="nav-wrapper #000000 black">
-        <a href="index.html" class="brand-logo center"
+        <a href="index1.html" class="brand-logo center"
           ><img src="img/logo6.png" alt="logo" width="110" height="60"
         /></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
@@ -33,29 +44,18 @@
         >
         <!--estas son las paginas que aparecen arriba a la izquierda-->
         <ul class="left hide-on-med-and-down" id="menu-side">
-          <li class="texto1"><a href="index.html">Inicio</a></li>
-          <li class="texto1"><a href="tienda.html">Tienda</a></li>
-          <li class="texto1"><a href="nostros.html">Sobre Nosotros</a></li>
-          <li class="texto1"><a href="contacto.html">Contacto</a></li>
+          <li class="texto1"><a href="index1.html">Inicio</a></li>
+          <li class="texto1"><a href="tienda1.html">Tienda</a></li>
+          <li class="texto1"><a href="nostros1.html">Sobre Nosotros</a></li>
+          <li class="texto1"><a href="contacto1.html">Contacto</a></li>
         </ul>
         <!--estas son las paginas que aparecen cuando la pagina se hace mas pequeña-->
         <ul class="right hide-on-med-and-down" id="menu-side">
           <li>
-            <a
-              class="right hide-on-med-and-down waves-effect waves-light modal-trigger texto1"
-              href="#modal2"
-              >Login</a
-            >
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Perfil<i class="material-icons right">arrow_drop_down</i></a></li>
           </li>
           <li>
-            <a
-              class="right hide-on-med-and-down waves-effect waves-light modal-trigger texto1"
-              href="#modal1"
-              >Sign up</a
-            >
-          </li>
-          <li>
-            <a href="carrito.html"><i class="material-icons">shopping_cart</i></a>
+            <a href="carrito1.html"><i class="material-icons">shopping_cart</i></a>
           </li>
         </ul>
       </div>
@@ -65,36 +65,29 @@
     esto tmb se debe copiar y pegar al crear nueva pagina-->
     <!--inicio navbar mobile-->
     <ul class="sidenav" id="mobile-demo">
-      <li class="texto1"><a href="index.html">Inicio</a></li>
-      <li class="texto1"><a href="tienda.html">Tienda</a></li>
-      <li class="texto1"><a href="nostros.html">Sobre Nosotros</a></li>
-      <li class="texto1"><a href="contacto.html">Contacto</a></li>
-      <li class="texto1"><a href="carrito.html">Carro </a></li>
+      <li class="texto1"><a href="index1.html">Inicio</a></li>
+      <li class="texto1"><a href="tienda1.html">Tienda</a></li>
+      <li class="texto1"><a href="nostros1.html">Sobre Nosotros</a></li>
+      <li class="texto1"><a href="contacto1.html">Contacto</a></li>
+      <li class="texto1"><a href="carrito1.html">Carro </a></li>
       <hr />
       </li>
-      <li class="texto1">
-        <a class="waves-effect waves-light modal-trigger" href="#modal2"
-          >Login</a
-        >
-      </li>
-      <li class="texto1">
-        <a class="waves-effect waves-light modal-trigger" href="#modal1"
-          >Sign up</a
-        >
+      <li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Perfil<i class="material-icons right">arrow_drop_down</i></a></li>
       </li>
     </ul>
     <!--fin navbar mobile-->
       
-      <div class="container section">
-        <div class="row">
-          <div class="col s12 center-align titulo1">
-            <h3>Contactanos</h3>
-          </div>
-          <div class="col s12 ">
-            <img src="img/sobrenosotros_2.jfif" width="100%" height="100%" alt="">
-          </div>
+    <div class="container section">
+      <div class="row">
+        <div class="col s12 center-align titulo1">
+          <h3>Contactanos</h3>
+        </div>
+        <div class="col s12 ">
+          <img src="img/sobrenosotros_2.jfif" width="100%" height="100%" alt="">
         </div>
       </div>
+    </div>
 
       <div class="container center">
         <div class="row">
@@ -205,7 +198,7 @@
         <div class="modal-content">
           <h4 class="texto1">Iniciar sesión</h4>
           <div class="row">
-            <form action="contacto1.html" method="get" class="col s12">
+            <form action="index1.html" method="get" class="col s12">
               <div class="row">
                 <div class="input-field col s12">
                   <label for="usuario" class="texto1">Nombre Usuario:</label>
@@ -250,25 +243,25 @@
             <h5>Mi cuenta</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2"
+                <a class="grey-text text-lighten-3 texto1" href="perfilDatos.html"
                   >Mi cuenta</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2"
+                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="Deseados.html"
                   >Lista de deseados</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1" href="carrito.html"
+                <a class="grey-text text-lighten-3 texto1" href="carrito1.html"
                   >Carro de compras</a
                 >
               </li>
               <br />
               <li>
-                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="#modal2">Pedidos</a>
+                <a class="grey-text text-lighten-3 texto1 modal-trigger" href="Compras.html">Pedidos</a>
               </li>
             </ul>
           </div>
@@ -334,6 +327,8 @@
 
         var elems = document.querySelectorAll('.modal');
         var instances = M.Modal.init(elems);
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
